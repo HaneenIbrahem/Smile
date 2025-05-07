@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Achievement Unlocked: Void Found!</title>
+    <style>
+        :root {
+            --bg-color: #f8fafc;
+            --text-primary: #1f2937;
+            --text-secondary: #4b5563;
+            --button-bg: #4f46e5;
+            --button-hover: #4338ca;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #1a1f2e;
+                --text-primary: #f3f4f6;
+                --text-secondary: #d1d5db;
+                --button-bg: #6366f1;
+                --button-hover: #818cf8;
+            }
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            padding: 2rem;
+            max-width: 600px;
+        }
+
+        .title {
+            color: var(--text-primary);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .subtitle {
+            color: var(--text-primary);
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .achievement {
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .description {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .return-button {
+            background-color: var(--button-bg);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 0.5rem;
+            font-weight: 500;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .return-button:hover {
+            background-color: var(--button-hover);
+            transform: translateY(-2px);
+        }
+
+        .footer-text {
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">🎉 Congratulations! 🎉</h1>
+        <h2 class="subtitle">You've Successfully Found Nothing!</h2>
+        <p class="achievement">
+            Achievement Unlocked: Master of the Void
+        </p>
+        <p class="description">
+            Of all the pages that exist on the internet,<br>
+            you managed to find one that doesn't!<br>
+            That's pretty special if you ask us.
+        </p>
+        <a href="/" class="return-button">
+            Return to Reality
+        </a>
+        <p class="footer-text">
+            (Your prize for this achievement is this lovely 404 message)
+        </p>
+    </div>
+</body>
+</html>
